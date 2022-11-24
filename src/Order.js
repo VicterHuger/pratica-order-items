@@ -15,7 +15,7 @@ export default class Order {
 
   getTaxes() {
     return this.items.reduce((prev, curr) => {
-      return prev + curr?.taxValue;
+      return prev + (curr?.taxValue || 0);
     }, 0);
   }
 
