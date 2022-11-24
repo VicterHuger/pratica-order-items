@@ -13,8 +13,13 @@
       "**/tests/**/*.test.js"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "poo",
+    "order",
+    "item",
+    "taxes",
+    "prices"
+  ],
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.0.3",
