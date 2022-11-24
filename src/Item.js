@@ -23,4 +23,8 @@ export class TaxItem extends Item {
     this.taxValue = 0;
   }
 
+  calculateTax(tax) {
+    return this.taxValue = this.price * tax;
+  }
+
 }
