@@ -1,5 +1,4 @@
 export default class Item {
-  category;
   description;
   price;
   constructor(description, price) {
@@ -10,7 +9,6 @@ export default class Item {
 }
 
 export class TaxItem extends Item {
-  category;
   description;
   price;
   taxValue;
