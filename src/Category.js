@@ -7,3 +7,13 @@ export class Water extends Item {
     this.price = price;
   }
 }
+
+export class Beer extends TaxItem {
+  constructor(description, price) {
+    super(description, price);
+    this.description = description;
+    this.price = price;
+    this.tax = 0.2;
+  }
+}
+
