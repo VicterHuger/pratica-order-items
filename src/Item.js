@@ -2,8 +2,7 @@ export default class Item {
   category;
   description;
   price;
-  constructor(category, description, price) {
-    this.category = category;
+  constructor(description, price) {
     this.description = description;
     this.price = price;
   }
