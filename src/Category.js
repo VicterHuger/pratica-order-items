@@ -25,3 +25,12 @@ export class Cigar extends TaxItem {
     this.tax = 0.25;
   }
 }
+
+export class Eletronics extends TaxItem {
+  constructor(description, price) {
+    super(description, price);
+    this.description = description;
+    this.price = price;
+    this.tax = 0.3;
+  }
+}
