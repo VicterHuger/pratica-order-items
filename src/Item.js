@@ -14,9 +14,8 @@ export class TaxItem extends Item {
   description;
   price;
   taxValue;
-  constructor(category, description, price) {
-    super(category, description, price);
-    this.category = category;
+  constructor(description, price) {
+    super(description, price);
     this.description = description;
     this.price = price;
     this.taxValue = 0;
