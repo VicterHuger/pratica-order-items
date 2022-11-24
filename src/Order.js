@@ -3,6 +3,9 @@ export default class Order {
     this.items = [];
   }
 
+  addItem(item) {
+    return this.items.push(item);
+  }
 
 
 }
