@@ -20,6 +20,7 @@
     "taxes",
     "prices"
   ],
+  "author": "Victor Hugo Simões",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.0.3",
