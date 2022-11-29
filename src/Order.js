@@ -1,10 +1,12 @@
+import TaxItem from "./TaxItem";
+
 export default class Order {
   constructor() {
     this.items = [];
   }
 
   addItem(item) {
-    return this.items.push(item);
+    this.items.push(item);
   }
 
   getTotal() {
