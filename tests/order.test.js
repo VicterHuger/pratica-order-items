@@ -1,4 +1,7 @@
-import { Beer, Cigar, Eletronics, Water } from "../src/Category.js";
+import Beer from "../src/Beer.js";
+import Cigar from "../src/Cigar.js";
+import Eletronics from "../src/Eletronics.js";
+import Water from "../src/Water.js";
 import Order from "./../src/Order.js";
 
 test("Deve criar um pedido e calcular o total", () => {
@@ -17,11 +20,6 @@ test("Deve criar um pedido e calcular os impostos", () => {
   order.addItem(new Cigar("Malboro", 10));
   order.addItem(new Eletronics("IPhone 13", 13000));
   order.addItem(new Water("Crystal", 1));
-  order.items.forEach((item) => {
-    if (item.getTax) {
-      return item?.getTax(item?.tax || 0)
-    }
-  });
   const taxes = order.getTaxes();
   expect(taxes).toBe(3903.7);
 });
