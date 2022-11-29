@@ -14,9 +14,12 @@ export default class Order {
   }
 
   getTaxes() {
-    return this.items.reduce((prev, curr) => {
-      return prev + (curr?.taxValue || 0);
-    }, 0);
+    return this.items.reduce((sum, item) => {
+      if (item instanceof TaxItem) {
+        return sum += item.calculateTax();
+      }
+      return sum;
+    }, 0)
   }
 
 
