@@ -8,9 +8,9 @@ export default class Order {
   }
 
   getTotal() {
-    return this.items.reduce((prev, curr) => {
-      return prev + curr?.price;
-    }, 0);
+    return this.items.reduce((prev, curr) =>
+      prev += curr?.price, 0
+    );
   }
 
   getTaxes() {
